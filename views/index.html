@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Pokedex Page</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
     <header class="container">
@@ -17,16 +17,18 @@
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-search">
             <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
           </svg>
-          <input type="search" placeholder="Buscar name de pokemon">
+          <input type="search" placeholder="Busca el pokemon que desees">
     </div>
     <button class="btn-search">Busqueda</button>
 </form>
     </header>
     <div class="container-filter container">
+        <div class="icon-filter">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 13.5V3.75m0 9.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 3.75V16.5m12-3V3.75m0 9.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 3.75V16.5m-6-9V3.75m0 3.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 9.75V10.5" />
           </svg>
-          <span>Filtro</span>
+          <span>Filtrar por caracteristica</span>
+        </div>
     </div>
     <main class="card-list-pokemon container">
 <a href="pokemon.html" class="card-pokemon ">
@@ -34,7 +36,7 @@
 <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Pokemon Bulbasaur">
 </div>
 <div class="card-info">
-    <span class="pokemon-id">Nº1</span>
+    <span class="pokemon-id">Pokemon Nº1</span>
     <h3>Bulbasaur</h3>
     <div class="card-types">
         <span class="grass">Planta</span>
@@ -47,7 +49,7 @@
 <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png" alt="Pokemon Yvisaur">
 </div>
 <div class="card-info">
-    <span class="pokemon-id">Nº2</span>
+    <span class="pokemon-id">Pokemon Nº2</span>
     <h3>Yvisaur</h3>
     <div class="card-types">
         <span class="grass">Planta</span>
@@ -60,7 +62,7 @@
 <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png" alt="Pokemon Venusaur">
 </div>
 <div class="card-info">
-    <span class="pokemon-id">Nº3</span>
+    <span class="pokemon-id">Pokemon Nº3</span>
     <h3>Venusaur</h3>
     <div class="card-types">
         <span class="grass">Planta</span>
@@ -73,7 +75,7 @@
 <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="Pokemon Charmander">
 </div>
 <div class="card-info">
-    <span class="pokemon-id">Nº4</span>
+    <span class="pokemon-id">Pokemon Nº4</span>
     <h3>Charmander</h3>
     <div class="card-types">
         <span class="fire">Fuego</span>
@@ -86,7 +88,7 @@
 <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png" alt="Pokemon Charmeleon">
 </div>
 <div class="card-info">
-    <span class="pokemon-id">Nº5</span>
+    <span class="pokemon-id">Pokemon Nº5</span>
     <h3>Charmeleon</h3>
     <div class="card-types">
         <span class="fire">Fuego</span>
@@ -98,7 +100,7 @@
 <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png" alt="Pokemon Charizard">
 </div>
 <div class="card-info">
-    <span class="pokemon-id">Nº6</span>
+    <span class="pokemon-id">Pokemon Nº6</span>
     <h3>Charizard</h3>
     <div class="card-types">
         <span class="fire">Fuego</span>
@@ -111,7 +113,7 @@
 <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt="Pokemon Squirtle">
 </div>
 <div class="card-info">
-    <span class="pokemon-id">Nº7</span>
+    <span class="pokemon-id">Pokemon Nº7</span>
     <h3>Squirtle</h3>
     <div class="card-types">
         <span class="water">Agua</span>
@@ -124,7 +126,7 @@
 <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/008.png" alt="Pokemon Wartortle">
 </div>
 <div class="card-info">
-    <span class="pokemon-id">Nº8</span>
+    <span class="pokemon-id">Pokemon Nº8</span>
     <h3>Wartortle</h3>
     <div class="card-types">
         <span class="water">Agua</span>
@@ -136,7 +138,7 @@
 <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png" alt="Pokemon Blastoise">
 </div>
 <div class="card-info">
-    <span class="pokemon-id">Nº9</span>
+    <span class="pokemon-id">Pokemon Nº9</span>
     <h3>Blastoise</h3>
     <div class="card-types">
         <span class="water">Agua</span>
@@ -145,10 +147,10 @@
 </a>
 <a href="pokemon.html" class="card-pokemon ">
 <div class="card-img">
-<img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/0010.png" alt="Pokemon Caterpie">
+<img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/010.png" alt="Pokemon Caterpie">
 </div>
 <div class="card-info">
-    <span class="pokemon-id">Nº10</span>
+    <span class="pokemon-id">Pokemon Nº10</span>
     <h3>Caterpie</h3>
     <div class="card-types">
         <span class="bug">Bicho</span>
@@ -158,10 +160,10 @@
 </a>
 <a href="pokemon.html" class="card-pokemon ">
 <div class="card-img">
-<img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/0011.png" alt="Pokemon Metapod">
+<img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/011.png" alt="Pokemon Metapod">
 </div>
 <div class="card-info">
-    <span class="pokemon-id">Nº11</span>
+    <span class="pokemon-id">Pokemon Nº11</span>
     <h3>Metapod</h3>
     <div class="card-types">
         <span class="bug">Bicho</span>
@@ -170,10 +172,10 @@
 </a>
 <a href="pokemon.html" class="card-pokemon ">
 <div class="card-img">
-<img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/0012.png" alt="Pokemon Butterfree">
+<img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/012.png" alt="Pokemon Butterfree">
 </div>
 <div class="card-info">
-    <span class="pokemon-id">Nº12</span>
+    <span class="pokemon-id">Pokemon Nº12</span>
     <h3>Butterfree</h3>
     <div class="card-types">
         <span class="bug">Bicho</span>

@@ -1,0 +1,14 @@
+{
+  "name": "pokedex-challenge",
+  "version": "1.0.0",
+  "description": "En este repositorio se plasma el proyecto de Pokedex challenge, un desafío de parte de Fundación Formar donde se debe realizar un listado de pokemons en forma de galería. Desarrollado en react y que consuma una API de Pokémon.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Patricio Cristaldo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
