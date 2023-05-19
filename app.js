@@ -9,6 +9,7 @@ app.use(express.static(path.resolve(__dirname,'public')))
 
 /* Rutas */
 app.get('/',(req,res) => res.sendFile(path.resolve(__dirname,'views','index.html')))
+app.get('/pokemon',(req,res) => res.sendFile(path.resolve(__dirname,'views','pokemon.html')))
 
 /* Levantamos el servidor con app listen */
 app.listen(port,function(){
