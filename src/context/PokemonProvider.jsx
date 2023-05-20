@@ -7,6 +7,11 @@ export const PokemonProvider = ({children}) => {
   const [globalPokemons, setGlobalPokemons] = useState([])
   const [offset, setOffset] = useState(0)
 
+  // Utilizar CustomHook - useForm
+	const { valueSearch, onInputChange, onResetForm } = useForm({
+		valueSearch: '',
+	});
+   
 // Estados para la aplicación simples
 const [loading, setLoading] = useState(true);
 	const [active, setActive] = useState(false);
@@ -26,7 +31,9 @@ const getAllPokemons = async(limit=50)=>{
   })
   const results = await Promise.all(promises)
   
-  setAllPokemons(results)
+  setAllPokemons([...allPokemons, ...results])
+  setLoading(false)
+
 }
 
 // Global pokemons
@@ -65,7 +72,13 @@ useEffect(() =>{
 
   return (
     <PokemonContext.Provider value={{
-         numero: 0
+         valueSearch,
+         onInputChange,
+         onResetForm,
+         allPokemons,
+         globalPokemons,
+         getPokemonByID
+
     }}>
         {children}
     </PokemonContext.Provider>
