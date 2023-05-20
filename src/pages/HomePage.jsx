@@ -1,5 +1,5 @@
 import React from "react"
-import { PokemonList } from "../components"
+import { FilterBar, PokemonList } from "../components"
 
 export const HomePage = () => {
   return (
@@ -14,6 +14,7 @@ export const HomePage = () => {
       </div>
     </div>
     </PokemonList>
+    <FilterBar />
     </>
   )
 }
