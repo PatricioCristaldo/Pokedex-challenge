@@ -1,11 +1,12 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 export const CardPokemon = ({pokemon}) => {
   return (
-    <link to={`/pokemon/${pokemon.id}`} className='card-pokemon'>
+    <Link to={`/pokemon/${pokemon.id}`} className='card-pokemon'>
         <div className='card-img'>
 				<img
-					src={pokemon.sprites.other.dream_world.front_default}
+					//src={pokemon.sprites.front_default}
+					src={pokemon.sprites.other.home.front_default}
 					alt={`Pokemon ${pokemon.name}`}
 				/>
 			</div>
@@ -20,6 +21,6 @@ export const CardPokemon = ({pokemon}) => {
 					))}
 				</div>
 			</div>       
-    </link>
+    </Link>
   )
 }
