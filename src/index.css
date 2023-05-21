@@ -39,6 +39,8 @@ body{
     background-position: right 0;
     background-size: 100%;
     font-family: 'Montserrat';
+    background-attachment: fixed;
+
 }
 
 /* Globales */
@@ -57,7 +59,7 @@ header{
 }
 
 .logo img{
-    width: 150px;
+    width: 250px;
 }
 
 header form{
@@ -368,6 +370,12 @@ Styles of Pokemon Single Page
 .group-info p{
     font-weight: 700;
 }
+.container-loader{
+    display: flex;
+    justify-content: center;
+    margin: 200px 0;
+}
+
 
 /* Stats */
 .container-stats{

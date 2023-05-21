@@ -1,7 +1,17 @@
-import React from 'react'
+
+import { Pinwheel } from '@uiball/loaders'
+import React from "react";
 
 export const Loader = () => {
   return (
-    <div>Loader</div>
-  )
-}
+    <div className="container-loader">
+
+<Pinwheel 
+ size={50}
+ lineWeight={10.5}
+ speed={1} 
+ color="white" 
+/>
+    </div>
+  );
+};

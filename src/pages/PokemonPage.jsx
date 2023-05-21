@@ -83,6 +83,9 @@ export const PokemonPage = () => {
 									{pokemon.stats[2].base_stat}
 								</span>
 							</div>
+              <div className='stat-group'>
+              <strong>-Abilities-</strong>
+              </div>
 							<div className='stat-group'>
 								<span>Special Attack</span>
 								<div className='progress-bar'></div>
