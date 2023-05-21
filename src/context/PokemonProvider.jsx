@@ -16,8 +16,8 @@ export const PokemonProvider = ({ children }) => {
 	const [loading, setLoading] = useState(true);
 	const [active, setActive] = useState(false);
 
-	// lLamar 50 pokemones a la API
-	const getAllPokemons = async (limit = 50) => {
+	// lLamar 75 pokemones a la API
+	const getAllPokemons = async (limit = 75) => {
 		const baseURL = 'https://pokeapi.co/api/v2/';
 
 		const res = await fetch(
@@ -75,7 +75,7 @@ export const PokemonProvider = ({ children }) => {
 
 	// BTN CARGAR MÁS
 	const onClickLoadMore = () => {
-		setOffset(offset + 50);
+		setOffset(offset + 75);
 	};
 
 	// Filter Function + State

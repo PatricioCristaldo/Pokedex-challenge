@@ -32,7 +32,7 @@ export const FilterBar = () => {
 						name='bug'
 						id='bug'
 					/>
-					<label htmlFor='bug'>Bicho</label>
+					<label htmlFor='bug'>Insecto</label>
 				</div>
 				<div className='group-type'>
 					<input

@@ -315,10 +315,10 @@ Styles of Pokemon Single Page
 
 .header-main-pokemon{
     margin-top: 20px;
-
+    background-color:  rgba(0, 118, 192, 0.566);
     display: flex;
     align-items: center;
-
+    border-radius: 10px;
     position: relative;
 }
 
@@ -333,6 +333,7 @@ Styles of Pokemon Single Page
 }
 
 .container-img-pokemon{
+    background-color: rgba(255, 21, 32, 0.566);
     order: 2;
     flex: 1;
     padding: 25px 25px 25px 0;
@@ -370,9 +371,12 @@ Styles of Pokemon Single Page
 
 /* Stats */
 .container-stats{
+    background-image: linear-gradient(to right, rgba(0, 118, 192, 0.566), rgba(255, 21, 32, 0.566));
+    
     display: flex;
     gap: 50px;
     align-items: center;
+    border-radius: 10px;
 }
 
 .stats{
