@@ -93,6 +93,10 @@ background-color: white;
     height: 20px;
     stroke: #555;
 }
+.p-search{
+    font-size: 25px;
+    color: white;
+}
 
 .btn-search{
     border: none;
