@@ -106,7 +106,7 @@ background-color: white;
     padding: 15px 30px;
     cursor: pointer;
     letter-spacing: 2px;
-    background-color: var(--color-primary);
+    background-color: #000000;
     color: #fff;
 }
 
@@ -379,7 +379,30 @@ Styles of Pokemon Single Page
     justify-content: center;
     margin: 200px 0;
 }
+/* Btn Load More */
 
+.container-btn-load-more{
+	display: flex;
+	justify-content: center;
+
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.btn-load-more{
+	border: none;
+	padding: 15px 40px;
+	font-family: inherit;
+	background-image: linear-gradient(to right, rgba(0, 118, 192, 0.867), rgba(255, 21, 33, 0.882));
+	color: #000000;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.btn-load-more:hover{
+	background-color: var(--color-primary-hover);
+	color: #000;
+}
 
 /* Stats */
 .container-stats{

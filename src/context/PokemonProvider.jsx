@@ -6,7 +6,7 @@ export const PokemonProvider = ({ children }) => {
 	const [allPokemons, setAllPokemons] = useState([]);
 	const [globalPokemons, setGlobalPokemons] = useState([]);
 	const [offset, setOffset] = useState(0);
-
+ 
 	// Utilizar CustomHook - useForm
 	const { valueSearch, onInputChange, onResetForm } = useForm({
 		valueSearch: '',
@@ -16,8 +16,8 @@ export const PokemonProvider = ({ children }) => {
 	const [loading, setLoading] = useState(true);
 	const [active, setActive] = useState(false);
 
-	// lLamar 75 pokemones a la API
-	const getAllPokemons = async (limit = 75) => {
+	// lLamar 25 pokemones a la API
+	const getAllPokemons = async (limit = 25) => {
 		const baseURL = 'https://pokeapi.co/api/v2/';
 
 		const res = await fetch(
@@ -75,7 +75,7 @@ export const PokemonProvider = ({ children }) => {
 
 	// BTN CARGAR MÁS
 	const onClickLoadMore = () => {
-		setOffset(offset + 75);
+		setOffset(offset + 25);
 	};
 
 	// Filter Function + State
