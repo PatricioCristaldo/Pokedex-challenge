@@ -118,6 +118,7 @@ background-color: white;
 /* Btn Filter */
 .container-filter{
     display: flex;
+    justify-content: flex-end;
 }
 
 .icon-filter{
@@ -272,8 +273,8 @@ background-color: white;
     left: -300px;
     width: 250px;
 
-    color: #555;
-    background-color: #f2f2f2;
+    color: #000000;
+    background-color: #ffffff;
     height: 100%;
     padding-top: 140px;
     transition: all .3s linear;
@@ -281,6 +282,7 @@ background-color: white;
 }
 
 .container-filters.active{
+    background-color: #b3b1b1 ;
     left: 0;
 }
 
@@ -445,7 +447,9 @@ Styles of Pokemon Single Page
         display: grid;
         grid-template-columns: repeat(3, 3fr);
         gap: 20px;
+        
     }
+    
 }
 @media (max-width:425px) {
     .card-list-pokemon{
